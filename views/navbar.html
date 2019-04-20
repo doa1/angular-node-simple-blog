@@ -1,0 +1,7 @@
+<nav class="navbar navbar-default">
+    <a href="#/" class="navbar-brand">Simple Blog</a>
+    <ul class="nav navbar-nav">
+        <li> <a href="/">Home</a></li>
+        <li ng-repeat="page in pages"> <a href="#!/pages/{{pages.indexOf(page)}}">{{page.title}}</a></li>
+    </ul>
+</nav>

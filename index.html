@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="appBlog">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+
+</head>
+
+<body style="padding: top 20;">
+
+    <div class="container">
+        <!--create a customized directive -->
+        <navigationbar></navigationbar>
+        <!--Render all the page contents here!-->
+
+        <div ng-view=""></div>
+        <div>{{myname}}</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers.js"></script>
+    <script src="app/directives.js"></script>
+
+</body>
+
+</html>

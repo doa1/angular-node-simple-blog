@@ -1,0 +1,6 @@
+<article ng-repeat="post in posts">
+
+    <h2><a href="#!/posts/{{posts.indexOf(post)}}">{{post.title}}</a></h2>
+    <p>{{post.exerpt}}</p>
+    <p> <a href="#!/posts/{{posts.indexOf(post)}}">Read more &rarr;</a></p>
+</article>
